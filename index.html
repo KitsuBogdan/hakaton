@@ -1,127 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вітаємо y Steam</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header style="padding-top: 20px;padding-bottom: 20px;">
-            <ul style="font-size: 30px;">
-                <li  style="display: inline;">
-                    <a href="main.html"><img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"></a>
-                </li>
-                <li  style="display: inline;">
-                    <a style="color: #1a9fff;margin-bottom: 20px;" href="index.html">Крамниця</a>
-                </li>
-                <li  style="display: inline;">
-                    <a style="color: #797979;" href="unity.html">Інформація</a>
-                </li>
-            </ul>
-    </header>
-<main>
-    <h2>Відібране i рекомендоване</h2>
-        <section id="Головна">
-             <ul>
-                <li style="display: inline;">
-                    <div class="Гра">
-                        <a style="margin-left: 2px;" href="cs2.html">
-                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1698860631">
-                            <h3>Counter-Strike 2</h3>
-                        </a>
-                    </div>
-                </li>
-                <li style="display: inline;">
-                    <div class="Гра">
-                        <a style="margin-left: 2px;" href="gta5.html">
-                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1714055751">
-                            <h3>Grand Theft Auto 5</h3>
-                        </a>
-                    </div>
-                </li>
-                <li style="display: inline;">
-                    <div class="Гра">
-                        <a style="margin-left: 2px;" href="gmod.html">
-                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg?t=1710347075">
-                            <h3>Garrys Mod</h3>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    <h2>Каталог</h2>
-        <section id="Каталог">
-            <ul>
-                <li style="display: inline;">
-                    <div class="Гра">
-                        <a style="margin-left: 2px;" href="cs2.html">
-                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1698860631">
-                            <h3>Counter-Strike 2</h3>
-                        </a>
-                    </div>
-                </li>
-                <li style="display: inline;">
-                    <div class="Гра">
-                        <a style="margin-left: 2px;" href="gta5.html">
-                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1714055751">
-                            <h3>Grand Theft Auto 5</h3>
-                        </a>
-                    </div>
-                </li>
-                <li style="display: inline;">
-                    <div class="Гра">
-                        <a style="margin-left: 2px;" href="gmod.html">
-                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg?t=1710347075">
-                            <h3>Garrys Mod</h3>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    <h2>Профіль</h2>
-        <section id="Профіль">
-            <div class="Інфо">
-                <img src="Картинка профілю" alt="Картинка">
-                <div class="Деталі">
-                    <h3>Нікнейм</h3>
-                    <p>Електрона пошта: користувач@gmail.com</p>
-                </div>
-            </div>
-            <div class="Куплені">
-                <h3>Куплені ігри</h3>
-                <ul>
-                    <li style="display: inline;">
-                        <div class="Гра">
-                            <a style="margin-left: 2px;" href="cs2.html">
-                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1698860631">
-                                <h3>Counter-Strike 2</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li style="display: inline;">
-                        <div class="Гра">
-                            <a style="margin-left: 2px;" href="gta5.html">
-                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1714055751">
-                                <h3>Grand Theft Auto 5</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li style="display: inline;">
-                        <div class="Гра">
-                            <a style="margin-left: 2px;" href="gmod.html">
-                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg?t=1710347075">
-                                <h3>Garrys Mod</h3>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-        </div>
-    </section>
-</main>
-<footer>
-    <img src="footer.png">
-</footer>
-</body>
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 53px;
+    width: 100%;
+    height: 50px;
+    background-color: #171D25;
 
-</html>
+    font-family: "Roboto";
+    font-style: normal;
+}
+header a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+header img {
+    padding-left: 50px;
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #1B2838;
+
+    font-family: "Roboto";
+    font-style: normal;
+}
+main{
+    color: #070d1b;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+main a {
+    color: #070d1b;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #171A21;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+}
