@@ -1,4 +1,4 @@
-*{
+* {
     font-family: "Motiva Sans", Sans-serif;
     color: #fff;
     font-weight: 2;
@@ -17,14 +17,16 @@ header {
     font-family: "Roboto";
     font-style: normal;
 }
-header a{
-    color: #000000;
+
+header a {
+    color: #fff;
     text-decoration: none;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
+
 header img {
     padding-left: 50px;
     height: 40px;
@@ -38,6 +40,11 @@ header img {
     gap: 50px;
 
 }
+
+.menu-elements:hover {
+    border-bottom: #fff solid 2px;
+}
+
 body {
     text-align: center;
     margin: 0;
@@ -46,13 +53,15 @@ body {
     font-family: "Roboto";
     font-style: normal;
 }
-main{
+
+main {
     color: #070d1b;
     font-size: 22px;
     text-transform: uppercase;
 }
 
-main,a {
+main,
+a {
     color: #070d1b;
     text-decoration: none;
     font-weight: 400;
@@ -60,16 +69,35 @@ main,a {
     line-height: 25px;
     text-transform: uppercase;
 }
-#about{
+
+.info {
+    padding-left: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.about_subtitle{
+
+.about_subtitle {
     font-size: 24px;
 }
-.about_install{
+
+.about_install {
     display: flex;
     justify-content: center;
     background-color: #06bfff;
@@ -80,31 +108,42 @@ main,a {
     border-radius: 3px;
     color: #fff;
 }
-.about_install_png{
+
+.about_install:hover {
+    background-color: #00698b;
+    box-shadow: #070d1b 6px 2px 10px;
+}
+
+.about_install_png {
     width: 40px;
     align-items: center;
-    padding-left:50px ;
+    padding-left: 50px;
 }
-.about_info{
+
+.about_info {
     display: flex;
     direction: row;
 }
+
 .platform_icon img {
     height: 20px;
 }
-.steam_logo{
+
+.steam_logo {
     position: relative;
     height: 200px;
     width: 300px;
     top: 90px;
 }
-.installer_list{
+
+.installer_list {
     font-size: 10px;
 }
-.about_vid{
-    position: relative;
+
+.about_vid {
     top: 20px;
 }
+
 footer {
     background-color: #171A21;
     color: #fff;

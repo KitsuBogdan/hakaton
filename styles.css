@@ -1,3 +1,9 @@
+* {
+    font-family: "Motiva Sans", Sans-serif;
+    color: #fff;
+    font-weight: 2;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -11,14 +17,16 @@ header {
     font-family: "Roboto";
     font-style: normal;
 }
-header a{
-    color: #000000;
+
+header a {
+    color: #fff;
     text-decoration: none;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
+
 header img {
     padding-left: 50px;
     height: 40px;
@@ -30,8 +38,11 @@ header img {
     justify-content: center;
     align-items: center;
     gap: 50px;
-
 }
+.menu-elements:hover {
+    border-bottom: #fff solid 2px;
+}
+
 body {
     text-align: center;
     margin: 0;
@@ -41,7 +52,11 @@ body {
     font-family: "Roboto";
     font-style: normal;
 }
-main{
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #070d1b;
     font-size: 22px;
     text-transform: uppercase;
@@ -56,8 +71,38 @@ main a {
     text-transform: uppercase;
 }
 
+#main,
+#Shop,
+#Library {
+    display: block;
+    padding: 20px 20px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #070d1b;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+#main{
+    margin-top: 50px;
+}
+.games{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+.library_text {
+    position: absolute;
+    margin-left: 70%;
+}
+
+.game {
+    display: block;
+    position: relative;
+    flex-direction: row;
+}
+
 footer {
-    background-color: #171A21;
+    background-color: #171a21;
     color: #fff;
     text-align: center;
     padding: 8px;
